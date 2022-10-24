@@ -1,0 +1,55 @@
+.playing {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100% - 60px);
+
+    h1 {
+        position: relative;
+        width: 100%;
+        font-size: max(3vw, 20px);
+    }
+
+    h1,
+    p {
+        margin: 0;
+    }
+    img {
+        display: block;
+        margin: auto;
+        height: calc(100% - 90px);
+        width: 100%;
+        object-fit: scale-down;
+    }
+}
+
+.lyrics {
+    text-align: center;
+    overflow-y: auto;
+    height: calc(100% - 60px);
+}
+
+.mySwiperContainer {
+    width: 100%;
+    height: calc(100% - 90px);
+}
+
+.mySwiperThumb {
+    text-align: center;
+    font-size: 0.8rem;
+    transition: 0.3s;
+    font-weight: 500;
+    cursor: pointer;
+
+    div {
+        align-items: center;
+    }
+
+    [class~="swiper-slide-active"] {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
